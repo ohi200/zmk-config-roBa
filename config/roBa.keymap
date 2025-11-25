@@ -8,7 +8,6 @@
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
-
 &trackball {
     automouse-layer = <5>;
     scroll-layers = <7>;
@@ -124,7 +123,7 @@
             bindings = <
 &kp EXCLAMATION             &kp DOUBLE_QUOTES  &kp HASH      &kp DOLLAR    &kp PERCENT                                             &kp AMPERSAND  &kp SQT       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
 &kp NUMBER_1                &kp NUMBER_2       &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp LC(LA(KP_NUMBER_0))      &kp NUMBER_6  &kp N7         &kp N8        &kp N9                &kp N0                 &kp RET
-&mt LEFT_SHIFT EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH      &kp DOLLAR    &kp PERCENT  &to 1                        &kp EQUAL     &kp PLUS       &kp ASTERISK  &kp LESS_THAN         &kp GREATER_THAN       &kp BACKSLASH
+&mt LEFT_SHIFT EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH      &kp DOLLAR    &kp PERCENT  &to 0                        &kp EQUAL     &kp PLUS       &kp ASTERISK  &kp LESS_THAN         &kp GREATER_THAN       &kp BACKSLASH
 &trans                      &trans             &trans        &trans        &trans       &trans                       &trans        &trans                                                                    &trans
             >;
         };
@@ -133,7 +132,7 @@
             bindings = <
 &kp ESC         &kp END   &kp UP_ARROW  &kp HOME   &kp F2                       &kp F2   &kp HOME        &kp UP_ARROW    &kp END    &trans
 &kp RS(TAB)     &kp LEFT  &kp DOWN      &kp RIGHT  &kp TAB  &trans      &trans  &kp TAB  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp RS(TAB)
-&kp LEFT_SHIFT  &trans    &trans        &trans     &trans   &to 1       &to 1   &trans   &trans          &trans          &trans     &trans
+&kp LEFT_SHIFT  &kp F11   &trans        &trans     &trans   &to 0       &to 0   &trans   &trans          &trans          &trans     &trans
 &trans          &trans    &trans        &trans     &trans   &trans      &trans  &trans                                              &trans
             >;
         };
