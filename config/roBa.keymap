@@ -14,11 +14,11 @@
 };
 
 &trackball_listener {
-    input-processors = <&zip_temp_layer 5 10000>;
+    input-processors = <&zip_temp_layer 4 10000>;
 };
 
 &trackball {
-    automouse-layer = <4>;
+    //automouse-layer = <4>;
     scroll-layers = <5>;
 
     // arrows {
