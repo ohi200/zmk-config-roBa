@@ -19,14 +19,9 @@
     >;
 };
 
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer 5 250>;
-};
+&mkp_input_listener { input-processors = <&zip_temp_layer 5 250>; };
 
-&zip_temp_layer {
-    require-prior-idle-ms = <200>;
-};
-
+&zip_temp_layer { require-prior-idle-ms = <200>; };
 
 &trackball_listener { input-processors = <&zip_temp_layer 4 100000>; };
 
@@ -90,7 +85,6 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
-
     };
 
     // combosやmacrosと同じ階層に以下のbihaviorsを追記
@@ -105,47 +99,45 @@
 
             tap-ms = <20>;
         };
-
-        tog_on: toggle_layer_on_only {
-            compatible = "zmk,behavior-toggle-layer";
-            #binding-cells = <1>;
-            display-name = "Toggle Layer On";
-            toggle-mode = "on";
-        };
-
-        tog_off: toggle_layer_off_only {
-            compatible = "zmk,behavior-toggle-layer";
-            #binding-cells = <1>;
-            display-name = "Toggle Layer Off";
-            toggle-mode = "off";
-        };
-
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        MAC {
             bindings = <
 &mt ESC Q           &kp W         &kp E                        &kp R             &kp T                                              &kp Y        &kp U    &kp I      &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S         &kp D                        &lt 1 F           &kp G        &mkp MCLK      &mt EXCLAMATION TILDE  &kp H        &lt 1 J  &kp K      &kp L    &mt RCTRL RET
-&mt LEFT_SHIFT Z    &kp X         &kp C                        &kp V             &kp B        &tog 2         &to 1                  &kp N        &kp M    &kp COMMA  &kp DOT  &kp UNDERSCORE
-&kp LCTRL           &kp LEFT_ALT  &mt LEFT_COMMAND LANGUAGE_2  &lt 1 LANGUAGE_1  &lt 2 SPACE  &kp TAB        &kp BACKSPACE          &lt 2 SPACE                               &kp DEL
+&mt LEFT_CONTROL A  &kp S         &kp D                        &lt 4 F           &kp G        &mkp MCLK      &mt EXCLAMATION TILDE  &kp H        &lt 4 J  &kp K      &kp L    &mt RCTRL RET
+&mt LEFT_SHIFT Z    &kp X         &kp C                        &kp V             &kp B        &tog 3         &to 3                  &kp N        &kp M    &kp COMMA  &kp DOT  &kp UNDERSCORE
+&kp LCTRL           &kp LEFT_ALT  &mt LEFT_COMMAND LANGUAGE_2  &lt 6 LANGUAGE_1  &lt 3 SPACE  &kp TAB        &kp BACKSPACE          &lt 3 SPACE                               &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
-        CURSOL {
+        WIN {
             bindings = <
-&kp ESC         &kp END   &kp UP_ARROW  &kp HOME   &kp F2                       &kp F2   &kp HOME        &kp UP_ARROW    &kp END    &trans
-&kp RS(TAB)     &kp LEFT  &kp DOWN      &kp RIGHT  &kp TAB  &trans      &trans  &kp TAB  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp RS(TAB)
-&kp LEFT_SHIFT  &trans    &trans        &trans     &trans   &to 0       &trans  &trans   &trans          &trans          &trans     &trans
-&trans          &trans    &trans        &trans     &trans   &trans      &trans  &trans                                              &trans
+&mt ESC Q           &kp W         &kp E                        &kp R             &kp T                                              &kp Y        &kp U    &kp I      &kp O    &kp P
+&mt LEFT_CONTROL A  &kp S         &kp D                        &lt 0 F           &kp G        &mkp MCLK      &mt EXCLAMATION TILDE  &kp H        &lt 0 J  &kp K      &kp L    &mt RCTRL RET
+&mt LEFT_SHIFT Z    &kp X         &kp C                        &kp V             &kp B        &tog 0         &to 0                  &kp N        &kp M    &kp COMMA  &kp DOT  &kp UNDERSCORE
+&kp LCTRL           &kp LEFT_ALT  &mt LEFT_COMMAND LANGUAGE_2  &lt 0 LANGUAGE_1  &lt 0 SPACE  &kp TAB        &kp BACKSPACE          &lt 0 SPACE                               &kp DEL
             >;
+
+            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
-        NUM {
+        ipad {
+            bindings = <
+&mt ESC Q           &kp W         &kp E                        &kp R             &kp T                                              &kp Y        &kp U    &kp I      &kp O    &kp P
+&mt LEFT_CONTROL A  &kp S         &kp D                        &lt 0 F           &kp G        &mkp MCLK      &mt EXCLAMATION TILDE  &kp H        &lt 0 J  &kp K      &kp L    &mt RCTRL RET
+&mt LEFT_SHIFT Z    &kp X         &kp C                        &kp V             &kp B        &tog 0         &to 0                  &kp N        &kp M    &kp COMMA  &kp DOT  &kp UNDERSCORE
+&kp LCTRL           &kp LEFT_ALT  &mt LEFT_COMMAND LANGUAGE_2  &lt 0 LANGUAGE_1  &lt 0 SPACE  &kp TAB        &kp BACKSPACE          &lt 0 SPACE                               &kp DEL
+            >;
+
+            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+        };
+
+        NUMBER {
             bindings = <
 &kp EXCLAMATION             &kp DOUBLE_QUOTES  &kp HASH      &kp DOLLAR    &kp PERCENT                                              &kp AMPERSAND  &kp SQT            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
 &kp NUMBER_1                &kp NUMBER_2       &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp LC(LA(KP_NUMBER_0))      &kp NUMBER_6   &kp N7         &kp N8             &kp N9                &kp N0                 &kp RET
@@ -156,10 +148,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&kp ESC         &kp END   &kp UP_ARROW  &kp HOME   &kp F2                       &kp F2   &kp HOME        &kp UP_ARROW    &kp END    &trans
+&kp RS(TAB)     &kp LEFT  &kp DOWN      &kp RIGHT  &kp TAB  &trans      &trans  &kp TAB  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp RS(TAB)
+&kp LEFT_SHIFT  &trans    &trans        &trans     &trans   &to 0       &trans  &trans   &trans          &trans          &trans     &trans
+&trans          &trans    &trans        &trans     &trans   &trans      &trans  &trans                                              &trans
             >;
         };
 
@@ -172,16 +164,7 @@
             >;
         };
 
-        SCROLL {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
-        layer_6 {
+        BT {
             bindings = <
 &trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
