@@ -23,7 +23,7 @@
 
 &zip_temp_layer { require-prior-idle-ms = <200>; };
 
-&trackball_listener { input-processors = <&zip_temp_layer 4 100000>; };
+&trackball_listener { input-processors = <&zip_temp_layer 5 100000>; };
 
 &trackball {
     //automouse-layer = <4>;
