@@ -54,10 +54,6 @@
             key-positions = <24 25>;
         };
 
-        test {
-            bindings = <&kp F>;
-            key-positions = <13>;
-        };
     };
 
     macros {
