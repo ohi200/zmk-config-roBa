@@ -13,10 +13,8 @@
     quick-tap-ms = <0>;
 };
 
-
 &trackball {
     automouse-layer = <5>;
-
     scroll-layers = <7>;
 
     // arrows {
@@ -96,7 +94,7 @@
         MAC {
             bindings = <
 &mt ESC Q           &kp W         &kp E                        &kp R             &kp T                                              &kp Y        &kp U    &kp I      &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S         &kp D                        &lt 4 F           &kp G        &mkp MCLK      &mt EXCLAMATION TILDE  &kp H        &lt 4 J  &kp K      &kp L    &mt RCTRL RET
+&mt LEFT_CONTROL A  &kp S         &kp D                        &lt 4 F           &lt 5 G      &mkp MCLK      &mt EXCLAMATION TILDE  &kp H        &lt 4 J  &kp K      &kp L    &mt RCTRL RET
 &mt LEFT_SHIFT Z    &kp X         &kp C                        &kp V             &kp B        &tog 3         &to 3                  &kp N        &kp M    &kp COMMA  &kp DOT  &kp UNDERSCORE
 &kp LCTRL           &kp LEFT_ALT  &mt LEFT_COMMAND LANGUAGE_2  &lt 6 LANGUAGE_1  &lt 3 SPACE  &kp TAB        &kp BACKSPACE          &lt 3 SPACE                               &kp DEL
             >;
@@ -107,7 +105,7 @@
         WIN {
             bindings = <
 &mt ESC Q           &kp W         &kp E                        &kp R             &kp T                                              &kp Y        &kp U    &kp I      &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S         &kp D                        &lt 4 F           &kp G        &mkp MCLK      &mt EXCLAMATION TILDE  &kp H        &lt 4 J  &kp K      &kp L    &mt RCTRL RET
+&mt LEFT_CONTROL A  &kp S         &kp D                        &lt 4 F           &lt 5 G      &mkp MCLK      &mt EXCLAMATION TILDE  &kp H        &lt 4 J  &kp K      &kp L    &mt RCTRL RET
 &mt LEFT_SHIFT Z    &kp X         &kp C                        &kp V             &kp B        &tog 3         &to 4                  &kp N        &kp M    &kp COMMA  &kp DOT  &kp UNDERSCORE
 &kp LCTRL           &kp LEFT_ALT  &mt LEFT_COMMAND LANGUAGE_2  &lt 6 LANGUAGE_1  &lt 3 SPACE  &kp TAB        &kp BACKSPACE          &lt 3 SPACE                               &kp DEL
             >;
@@ -128,10 +126,10 @@
 
         NUMBER {
             bindings = <
-&kp EXCLAMATION             &kp DOUBLE_QUOTES  &kp HASH      &kp DOLLAR    &kp PERCENT                                              &kp AMPERSAND  &kp SQT            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
-&kp NUMBER_1                &kp NUMBER_2       &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp LC(LA(KP_NUMBER_0))      &kp NUMBER_6   &kp N7         &kp N8             &kp N9                &kp N0                 &kp RET
-&mt LEFT_SHIFT EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH      &kp DOLLAR    &kp PERCENT  &to 0                        &kp AMPERSAND  &kp SQT        &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH
-&trans                      &trans             &trans        &trans        &trans       &trans                       &trans         &trans                                                                         &trans
+&kp EXCLAMATION             &kp DOUBLE_QUOTES  &kp HASH      &kp DOLLAR    &kp PERCENT                                             &kp AMPERSAND  &kp SQT       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
+&kp NUMBER_1                &kp NUMBER_2       &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp LC(LA(KP_NUMBER_0))      &kp NUMBER_6  &kp N7         &kp N8        &kp N9                &kp N0                 &kp RET
+&mt LEFT_SHIFT EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH      &kp DOLLAR    &kp PERCENT  &to 0                        &kp EQUAL     &kp PLUS       &kp ASTERISK  &kp LESS_THAN         &kp GREATER_THAN       &kp BACKSLASH
+&trans                      &trans             &trans        &trans        &trans       &trans                       &trans        &trans                                                                    &trans
             >;
         };
 
