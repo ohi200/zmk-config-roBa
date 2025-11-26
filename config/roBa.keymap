@@ -136,7 +136,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans     &kp LC(LEFT)     &kp PAGE_DOWN      &kp PAGE_UP  &kp LC(W)
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp HOME   &mkp MB1         &mkp MB3           &mkp MB2     &mt RIGHT_SHIFT END
-&trans  &trans  &trans  &trans  &trans  &trans      &to 0   &kp LC(L)  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans       &trans
+&trans  &trans  &trans  &trans  &trans  &to 0       &to 0   &kp LC(L)  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans       &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                      &trans
             >;
         };
