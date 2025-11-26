@@ -134,10 +134,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                         &kp LG(T)      &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &kp LG(W)  &kp LG(R)
-&trans  &trans  &trans  &trans  &trans  &trans      &kp LG(L)  &kp HOME       &mkp MB1          &mkp MB3           &mkp MB2   &kp END
-&trans  &trans  &trans  &trans  &trans  &trans      &trans     &kp LS(SPACE)  &kp SPACE         &trans             &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans                                                         &trans
+&trans  &trans  &trans  &trans  &trans                      &trans     &kp LC(LEFT)     &trans             &trans    &kp LC(W)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp HOME   &mkp MB1         &mkp MB3           &mkp MB2  &kp END
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LC(L)  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                   &trans
             >;
         };
 
