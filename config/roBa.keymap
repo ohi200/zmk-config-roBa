@@ -116,10 +116,10 @@
 
         NUMBER {
             bindings = <
-&kp EXCLAMATION         &kp DOUBLE_QUOTES  &kp HASH          &kp DOLLAR         &kp PERCENT                            &kp LS(NUMBER_6)  &kp LS(N7)    &kp ASTERISK          &kp RIGHT_PARENTHESIS  &kp MINUS
-&kp NUMBER_1            &kp NUMBER_2       &kp NUMBER_3      &kp NUMBER_4       &kp N5       &trans      &kp NUMBER_6  &kp N7            &kp N8        &kp N9                &kp N0                 &kp RET
-&mt LEFT_SHIFT AT_SIGN  &kp BACKSLASH      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT  &to 0       &kp EQUAL     &kp PLUS          &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON
-&trans                  &trans             &trans            &trans             &trans       &trans      &trans        &trans                                                                       &kp COLON
+&kp EXCLAMATION              &kp DOUBLE_QUOTES  &kp HASH          &kp DOLLAR     &kp PERCENT                             &kp LS(NUMBER_6)  &kp LS(N7)    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp MINUS
+&kp NUMBER_1                 &kp NUMBER_2       &kp NUMBER_3      &kp NUMBER_4   &kp N5       &trans      &kp NUMBER_6   &kp N7            &kp N8        &kp N9                &kp N0                 &kp RET
+&mt LEFT_SHIFT LEFT_BRACKET  &kp BACKSLASH      &kp LEFT_BRACKET  &kp BACKSLASH  &kp PERCENT  &to 0       &kp LS(EQUAL)  &kp COLON         &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON
+&trans                       &trans             &trans            &trans         &trans       &trans      &trans         &trans                                                                       &mt DEL COLON
             >;
         };
 
