@@ -118,7 +118,7 @@
             bindings = <
 &kp EXCLAMATION             &kp LS(DOUBLE_QUOTES)  &kp HASH              &kp DOLLAR        &kp PERCENT                            &kp AMPERSAND  &kp SQT       &kp LS(N9)            &kp RS(N0)             &kp MINUS
 &kp NUMBER_1                &kp NUMBER_2           &kp NUMBER_3          &kp NUMBER_4      &kp N5       &trans      &kp NUMBER_6  &kp N7         &kp N8        &kp N9                &kp N0                 &kp RET
-&mt LEFT_SHIFT EXCLAMATION  &kp AT_SIGN            &kp NON_US_BACKSLASH  &kp LEFT_BRACKET  &kp PERCENT  &to 0       &kp EQUAL     &kp PLUS       &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON
+&mt LEFT_SHIFT EXCLAMATION  &kp AT_SIGN            &kp NON_US_BACKSLASH  &kp LEFT_BRACKET  &kp PERCENT  &to 0       &kp EQUAL     &kp PLUS       &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON
 &trans                      &trans                 &trans                &trans            &trans       &trans      &trans        &trans                                                                    &trans
             >;
         };
