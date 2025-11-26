@@ -89,7 +89,7 @@
 &kp LCTRL           &kp LEFT_GUI  &kp LEFT_ALT  &lt 6 INT_MUHENKAN  &lt 3 SPACE  &kp TAB        &kp BACKSPACE          &lt 3 SPACE                               &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         MAC {
