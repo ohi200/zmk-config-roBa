@@ -85,7 +85,7 @@
             bindings = <
 &kp ESC                &kp END       &kp UP_ARROW    &kp HOME     &kp F2                                  &kp RA(LEFT_ARROW)  &kp LC(LEFT)     &kp PAGE_DOWN      &kp PAGE_UP  &kp LC(W)
 &mt LS(LCTRL) LS(TAB)  &kp LEFT      &kp DOWN_ARROW  &kp RIGHT    &kp TAB      &trans      &trans         &kp HOME            &mkp MB1         &mkp MB3           &mkp MB2     &mt RIGHT_SHIFT END
-&kp LEFT_SHIFT         &kp F11       &trans          &trans       &trans       &trans      &trans         &kp LC(L)           &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans       &trans
+&kp LEFT_SHIFT         &kp F11       &trans          &trans       &trans       &to 1       &to 1          &kp LC(L)           &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans       &trans
 &kp LCTRL              &kp LEFT_GUI  &kp LEFT_ALT    &lt 6 LANG5  &lt 4 SPACE  &to 4       &kp BACKSPACE  &lt 1 SPACE                                                          &kp DEL
             >;
         };
