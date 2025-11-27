@@ -105,7 +105,7 @@
         WIN {
             bindings = <
 &mt ESC Q           &kp W         &kp E         &kp R            &mt LS(CAPSLOCK) T                              &kp Y        &kp U    &kp I      &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S         &kp D         &lt 5 F          &lt 0 G             &trans       &kp JP_TILDE   &kp H        &lt 5 J  &kp K      &kp L    &mt RIGHT_SHIFT RET
+&mt LEFT_CONTROL A  &kp S         &kp D         &lt 5 F          &lt 0 G             &to 0        &kp JP_TILDE   &kp H        &lt 5 J  &kp K      &kp L    &mt RIGHT_SHIFT RET
 &mt LEFT_SHIFT Z    &kp X         &kp C         &kp V            &kp B               &to 5        &to 4          &kp N        &kp M    &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL           &kp LEFT_GUI  &kp LEFT_ALT  &lt 6 JP_HANZEN  &lt 4 SPACE         &kp TAB      &kp BACKSPACE  &lt 4 SPACE                               &kp DEL
             >;
