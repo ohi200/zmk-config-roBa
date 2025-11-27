@@ -36,8 +36,8 @@
 
 &trackball {
     automouse-layer = <0>;
-
     scroll-layers = <7>;
+
     // arrows {
     //     layers = <3>;
     //     bindings =
@@ -137,10 +137,11 @@
 
         NUMBER {
             bindings = <
-&kp EXCLAMATION              &kp DOUBLE_QUOTES  &kp HASH           &kp DOLLAR     &kp PERCENT                                   &kp LS(NUMBER_6)  &kp LS(N7)         &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp MINUS
-&kp NUMBER_1                 &kp NUMBER_2       &kp NUMBER_3       &kp NUMBER_4   &kp N5             &trans      &kp NUMBER_6   &kp N7            &kp N8             &kp N9                &kp N0                 &kp RET
-&mt LEFT_SHIFT LEFT_BRACKET  &kp JP_PIPE           &kp RIGHT_BRACKET  &kp BACKSLASH  &kp JP_UNDERSCORE  &to 1       &kp LS(MINUS)  &kp COLON         &kp DOUBLE_QUOTES  &kp JP_YEN  &kp RIGHT_PARENTHESIS  &kp JP_COLON
-&trans                       &trans             &trans             &trans         &trans             &trans      &trans         &trans                                                                            &kp DEL         >;
+&kp EXCLAMATION              &kp DOUBLE_QUOTES  &kp HASH           &kp DOLLAR     &kp PERCENT                                   &kp LS(NUMBER_6)  &kp LS(N7)         &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp MINUS
+&kp NUMBER_1                 &kp NUMBER_2       &kp NUMBER_3       &kp NUMBER_4   &kp N5             &trans      &kp NUMBER_6   &kp N7            &kp N8             &kp N9        &kp N0                &kp RET
+&mt LEFT_SHIFT LEFT_BRACKET  &kp JP_PIPE        &kp RIGHT_BRACKET  &kp BACKSLASH  &kp JP_UNDERSCORE  &to 1       &kp LS(MINUS)  &kp COLON         &kp DOUBLE_QUOTES  &kp JP_YEN    &kp SEMICOLON         &kp JP_COLON
+&trans                       &trans             &trans             &trans         &trans             &trans      &trans         &trans                                                                   &kp DEL
+            >;
         };
 
         ARROW {
