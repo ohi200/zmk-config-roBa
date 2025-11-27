@@ -59,7 +59,7 @@
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 1 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&to 2 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
     };
@@ -81,12 +81,21 @@
     keymap {
         compatible = "zmk,keymap";
 
+        MOUSE {
+            bindings = <
+&trans  &trans    &kp UP_ARROW    &trans     &trans                      &trans     &kp LC(LEFT)     &kp PAGE_DOWN      &kp PAGE_UP  &kp LC(W)
+&trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans      &trans  &kp HOME   &mkp MB1         &mkp MB3           &mkp MB2     &mt RIGHT_SHIFT END
+&trans  &trans    &trans          &trans     &trans  &trans      &trans  &kp LC(L)  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans       &trans
+&trans  &trans    &trans          &trans     &trans  &trans      &trans  &to 1                                                       &trans
+            >;
+        };
+
         WIN {
             bindings = <
-&mt ESC Q           &kp W         &kp E         &kp R               &mt GRAVE T                                      &kp Y        &kp U    &kp I      &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S         &kp D         &lt 4 F             &lt 5 G      &to 5        &mt EXCLAMATION TILDE  &kp H        &lt 4 J  &kp K      &kp L    &mt RIGHT_SHIFT RET
-&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V               &kp B        &to 4        &to 3                  &kp N        &kp M    &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL           &kp LEFT_GUI  &kp LEFT_ALT  &lt 6 INT_MUHENKAN  &lt 3 SPACE  &kp TAB      &kp BACKSPACE          &lt 3 SPACE                               &kp DEL
+&mt ESC Q           &kp W         &kp E         &kp R               &kp T                                            &kp Y        &kp U    &kp I      &kp O    &kp P
+&mt LEFT_CONTROL A  &kp S         &kp D         &lt 5 F             &lt 0 G      &to 0        &mt EXCLAMATION TILDE  &kp H        &lt 5 J  &kp K      &kp L    &mt RIGHT_SHIFT RET
+&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V               &kp B        &to 5        &to 4                  &kp N        &kp M    &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL           &kp LEFT_GUI  &kp LEFT_ALT  &lt 6 INT_MUHENKAN  &lt 4 SPACE  &kp TAB      &kp BACKSPACE          &lt 4 SPACE                               &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
@@ -95,9 +104,9 @@
         MAC {
             bindings = <
 &mt ESC Q           &kp W         &kp E                        &kp R             &kp T                                              &kp Y        &kp U    &kp I      &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S         &kp D                        &lt 4 F           &lt 5 G      &mkp MCLK      &mt EXCLAMATION TILDE  &kp H        &lt 4 J  &kp K      &kp L    &mt RCTRL RET
-&mt LEFT_SHIFT Z    &kp X         &kp C                        &kp V             &kp B        &tog 3         &to 3                  &kp N        &kp M    &kp COMMA  &kp DOT  &kp UNDERSCORE
-&kp LCTRL           &kp LEFT_ALT  &mt LEFT_COMMAND LANGUAGE_2  &lt 6 LANGUAGE_1  &lt 3 SPACE  &kp TAB        &kp BACKSPACE          &lt 3 SPACE                               &kp DEL
+&mt LEFT_CONTROL A  &kp S         &kp D                        &lt 5 F           &lt 0 G      &mkp MCLK      &mt EXCLAMATION TILDE  &kp H        &lt 5 J  &kp K      &kp L    &mt RCTRL RET
+&mt LEFT_SHIFT Z    &kp X         &kp C                        &kp V             &kp B        &tog 4         &to 4                  &kp N        &kp M    &kp COMMA  &kp DOT  &kp UNDERSCORE
+&kp LCTRL           &kp LEFT_ALT  &mt LEFT_COMMAND LANGUAGE_2  &lt 6 LANGUAGE_1  &lt 4 SPACE  &kp TAB        &kp BACKSPACE          &lt 4 SPACE                               &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -106,9 +115,9 @@
         ipad {
             bindings = <
 &mt ESC Q           &kp W         &kp E                        &kp R             &kp T                                              &kp Y        &kp U    &kp I      &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S         &kp D                        &lt 4 F           &kp G        &mkp MCLK      &mt EXCLAMATION TILDE  &kp H        &lt 4 J  &kp K      &kp L    &mt RCTRL RET
-&mt LEFT_SHIFT Z    &kp X         &kp C                        &kp V             &kp B        &tog 3         &to 4                  &kp N        &kp M    &kp COMMA  &kp DOT  &kp UNDERSCORE
-&kp LCTRL           &kp LEFT_ALT  &mt LEFT_COMMAND LANGUAGE_2  &lt 6 LANGUAGE_1  &lt 3 SPACE  &kp TAB        &kp BACKSPACE          &lt 3 SPACE                               &kp DEL
+&mt LEFT_CONTROL A  &kp S         &kp D                        &lt 5 F           &kp G        &mkp MCLK      &mt EXCLAMATION TILDE  &kp H        &lt 5 J  &kp K      &kp L    &mt RCTRL RET
+&mt LEFT_SHIFT Z    &kp X         &kp C                        &kp V             &kp B        &tog 4         &to 5                  &kp N        &kp M    &kp COMMA  &kp DOT  &kp UNDERSCORE
+&kp LCTRL           &kp LEFT_ALT  &mt LEFT_COMMAND LANGUAGE_2  &lt 6 LANGUAGE_1  &lt 4 SPACE  &kp TAB        &kp BACKSPACE          &lt 4 SPACE                               &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -118,7 +127,7 @@
             bindings = <
 &kp EXCLAMATION              &kp DOUBLE_QUOTES  &kp HASH           &kp DOLLAR     &kp PERCENT                             &kp LS(NUMBER_6)  &kp LS(N7)         &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp MINUS
 &kp NUMBER_1                 &kp NUMBER_2       &kp NUMBER_3       &kp NUMBER_4   &kp N5       &trans      &kp NUMBER_6   &kp N7            &kp N8             &kp N9                &kp N0                 &kp RET
-&mt LEFT_SHIFT LEFT_BRACKET  &kp PIPE           &kp RIGHT_BRACKET  &kp BACKSLASH  &kp PERCENT  &to 0       &kp LS(MINUS)  &kp COLON         &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON
+&mt LEFT_SHIFT LEFT_BRACKET  &kp PIPE           &kp RIGHT_BRACKET  &kp BACKSLASH  &kp PERCENT  &to 1       &kp LS(MINUS)  &kp COLON         &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON
 &trans                       &trans             &trans             &trans         &trans       &trans      &trans         &trans                                                                            &mt DEL SINGLE_QUOTE
             >;
         };
@@ -127,17 +136,8 @@
             bindings = <
 &kp ESC         &kp END   &kp UP_ARROW  &kp HOME   &kp F2                       &kp F2   &kp HOME        &kp UP_ARROW    &kp END    &trans
 &kp RS(TAB)     &kp LEFT  &kp DOWN      &kp RIGHT  &kp TAB  &trans      &trans  &kp TAB  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp RS(TAB)
-&kp LEFT_SHIFT  &kp F11   &trans        &trans     &trans   &to 0       &to 0   &trans   &trans          &trans          &trans     &trans
+&kp LEFT_SHIFT  &kp F11   &trans        &trans     &trans   &to 1       &to 1   &trans   &trans          &trans          &trans     &trans
 &trans          &trans    &trans        &trans     &trans   &trans      &trans  &trans                                              &trans
-            >;
-        };
-
-        MOUSE {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                            &kp LA(LEFT_ARROW)  &kp LC(LEFT)     &kp PAGE_DOWN      &kp PAGE_UP  &kp LC(W)
-&trans  &trans  &trans  &trans  &trans  &trans      &trans        &kp HOME            &mkp MB1         &mkp MB3           &mkp MB2     &mt RIGHT_SHIFT END
-&trans  &trans  &trans  &trans  &trans  &to 0       &to 0         &kp LC(L)           &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans       &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp RA(LEFT)  &trans                                                               &trans
             >;
         };
 
