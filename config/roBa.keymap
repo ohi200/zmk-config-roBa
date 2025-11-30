@@ -35,8 +35,8 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 &trackball {
-    automouse-layer = <0>;
-    scroll-layers = <7>;
+    automouse-layer = <3>;
+    scroll-layers = <5>;
 
     // arrows {
     //     layers = <3>;
