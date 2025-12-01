@@ -95,10 +95,10 @@
 
         WIN {
             bindings = <
-&mt ESC Q           &kp W         &kp E         &kp R            &mt LS(CAPSLOCK) T                              &kp Y        &kp U    &kp I      &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S         &kp D         &lt 2 F          &lt 4 G             &trans       &to 3          &kp H        &lt 2 J  &kp K      &kp L    &mt RIGHT_SHIFT RET
-&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V            &kp B               &to 2        &to 1          &kp N        &kp M    &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL           &kp LEFT_GUI  &kp LEFT_ALT  &lt 4 JP_HANZEN  &lt 1 SPACE         &kp TAB      &kp BACKSPACE  &lt 1 SPACE                               &kp DEL
+&mt ESC Q           &kp W         &kp E         &kp R            &kp T                                    &kp Y        &kp U    &kp I      &kp O    &kp P
+&mt LEFT_CONTROL A  &kp S         &kp D         &lt 2 F          &kp G        &trans       &to 3          &kp H        &lt 2 J  &kp K      &kp L    &mt RIGHT_SHIFT RET
+&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V            &kp B        &to 2        &to 1          &kp N        &kp M    &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL           &kp LEFT_GUI  &kp LEFT_ALT  &lt 4 JP_HANZEN  &lt 1 SPACE  &kp TAB      &kp BACKSPACE  &lt 1 SPACE                               &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
