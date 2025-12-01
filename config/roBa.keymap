@@ -124,10 +124,10 @@
 
         MOUSE {
             bindings = <
-&kp ESC                &kp END       &kp UP_ARROW    &kp HOME     &kp F2                                     &kp RC(L)     &kp LC(T)        &kp PAGE_DOWN      &kp PAGE_UP  &kp LC(W)
-&mt LS(LCTRL) LS(TAB)  &kp LEFT      &kp DOWN_ARROW  &kp RIGHT    &kp TAB      &trans      &kp LS(CAPSLOCK)  &kp RA(LEFT)  &mkp LCLK        &mkp MB3           &mkp MB2     &mt RIGHT_SHIFT ENTER
-&kp LEFT_SHIFT         &kp X         &kp C           &kp V        &kt F11      &to 0       &to 0             &kp HOME      &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp END      &trans
-&kp LCTRL              &kp LEFT_GUI  &kp LEFT_ALT    &lt 5 LANG5  &lt 1 SPACE  &trans      &kp BACKSPACE     &lt 0 SPACE                                                    &kp DEL
+&kp ESC                &kp END   &kp UP_ARROW    &kp HOME   &kp F2                                     &kp RC(L)     &kp LC(T)        &kp PAGE_DOWN      &kp PAGE_UP  &kp LC(W)
+&mt LS(LCTRL) LS(TAB)  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp TAB      &trans      &kp LS(CAPSLOCK)  &kp RA(LEFT)  &mkp LCLK        &mkp MB3           &mkp MB2     &mt RIGHT_SHIFT ENTER
+&kp LEFT_SHIFT         &kp X     &kp C           &kp V      &kt F11      &to 0       &to 0             &kp HOME      &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp END      &trans
+&trans                 &trans    &trans          &trans     &lt 1 SPACE  &trans      &trans            &lt 0 SPACE                                                    &kp DEL
             >;
         };
 
