@@ -109,7 +109,7 @@
 &kp EXCLAMATION              &kp DOUBLE_QUOTES  &kp HASH           &kp DOLLAR     &kp PERCENT                                   &kp LS(NUMBER_6)  &kp LS(N7)         &kp ASTERISK  &kp LEFT_PARENTHESIS  &mt JP_TILDE MINUS
 &mt LCTRL NUMBER_1           &kp NUMBER_2       &kp NUMBER_3       &kp NUMBER_4   &kp N5             &trans      &kp NUMBER_6   &kp N7            &kp N8             &kp N9        &kp N0                &mt RIGHT_SHIFT ENTER
 &mt LEFT_SHIFT LEFT_BRACKET  &kp JP_PIPE        &kp RIGHT_BRACKET  &kp BACKSLASH  &kp JP_UNDERSCORE  &to 0       &kp LS(MINUS)  &kp COLON         &kp DOUBLE_QUOTES  &kp JP_YEN    &kp SEMICOLON         &kp JP_COLON
-&trans                       &trans             &trans             &trans         &lt 0 SPACE        &trans      &trans         &lt 0 SPACE                                                              &kp DEL
+&trans                       &trans             &trans             &trans         &lt 2 SPACE        &trans      &trans         &lt 0 SPACE                                                              &kp DEL
             >;
         };
 
@@ -118,7 +118,7 @@
 &kp ESC  &kp END   &kp UP_ARROW  &kp HOME   &kp F2                           &kp F2       &kp HOME        &kp UP_ARROW    &kp END    &trans
 &trans   &kp LEFT  &kp DOWN      &kp RIGHT  &kp TAB      &trans      &trans  &kp TAB      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans
 &trans   &kp X     &kp C         &kp V      &kp F11      &to 0       &to 0   &trans       &trans          &trans          &trans     &trans
-&trans   &trans    &trans        &trans     &lt 0 SPACE  &trans      &trans  &lt 0 SPACE                                             &trans
+&trans   &trans    &trans        &trans     &lt 1 SPACE  &trans      &trans  &lt 0 SPACE                                             &trans
             >;
         };
 
