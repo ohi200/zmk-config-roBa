@@ -115,7 +115,7 @@
 &kp LCTRL           &kp LEFT_GUI  &kp LEFT_ALT  &lt 4 JP_HANZEN  &lt 1 SPACE  &kp TAB      &kp BACKSPACE  &lt 1 SPACE                               &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         NUMBER {
