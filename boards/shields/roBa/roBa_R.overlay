@@ -1,14 +1,14 @@
 #include "roBa.dtsi"
 #include <input/processors.dtsi>
 
-//&zip_temp_layer {
-//    require-prior-idle-ms = <200>;
+&zip_temp_layer {
+    //require-prior-idle-ms = <200>;
 
-//    excluded-positions = <
-//        10 // Ctrl
-//        21 // Ctrl
-//    >;
-//};
+    excluded-positions = <
+        10 // Ctrl
+        21 // Ctrl
+    >;
+};
 
 &default_transform {
     col-offset = <6>;
