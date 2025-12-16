@@ -1,16 +1,16 @@
 #include "roBa.dtsi"
 #include <input/processors.dtsi>
 
-&zip_temp_layer {
+//zip_temp_layer {
     //require-prior-idle-ms = <200>;
 
-    excluded-positions = <
-        18 // Ctrl
-        19 // Ctrl
-        20 // Ctrl
-        41 // Ctrl
-    >;
-};
+//    excluded-positions = <
+//        18 // Ctrl
+//        19 // Ctrl
+//        20 // Ctrl
+//        41 // Ctrl
+//    >;
+//};
 
 &default_transform {
     col-offset = <6>;
