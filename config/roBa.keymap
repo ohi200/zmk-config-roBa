@@ -50,11 +50,12 @@
 // };
 //};
 
-//&trackball_listener {
-//    compatible = "zmk,input-listener";
-//    device = <&trackball>;
-//    input-processors = <&zip_temp_layer 3 10000>;
-//};
+&trackball_listener {
+    compatible = "zmk,input-listener";
+    device = <&trackball>;
+
+    input-processors = <&zip_temp_layer 3 10000>;
+};
 
 //&mkp_input_listener { input-processors = <&zip_temp_layer 3 10000>; };
 //&zip_temp_layer { require-prior-idle-ms = <200>; };
