@@ -37,18 +37,17 @@
 //&trackball {
 //    automouse-layer = <3>;
 //    scroll-layers = <5>;
-
-    // arrows {
-    //     layers = <3>;
-    //     bindings =
-    //         <&kp RIGHT_ARROW>,
-    //         <&kp LEFT_ARROW>,
-    //         <&kp UP_ARROW>,
-    //         <&kp DOWN_ARROW>;
-    //     tick = <10>;
-    //     wait-ms = <5>;
-    //     tap-ms = <5>;
-    // };
+// arrows {
+//     layers = <3>;
+//     bindings =
+//         <&kp RIGHT_ARROW>,
+//         <&kp LEFT_ARROW>,
+//         <&kp UP_ARROW>,
+//         <&kp DOWN_ARROW>;
+//     tick = <10>;
+//     wait-ms = <5>;
+//     tap-ms = <5>;
+// };
 //};
 
 &trackball_listener {
@@ -56,6 +55,7 @@
     device = <&trackball>;
     input-processors = <&zip_temp_layer 3 10000>;
 };
+
 //&mkp_input_listener { input-processors = <&zip_temp_layer 3 10000>; };
 //&zip_temp_layer { require-prior-idle-ms = <200>; };
 
@@ -66,6 +66,11 @@
         minus {
             bindings = <&kp MINUS>;
             key-positions = <9 8>;
+        };
+
+        test {
+            bindings = <&none>;
+            key-positions = <18 19 20 41>;
         };
     };
 
