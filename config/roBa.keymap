@@ -67,11 +67,6 @@
             bindings = <&kp MINUS>;
             key-positions = <9 8>;
         };
-
-        test {
-            bindings = <&none>;
-            key-positions = <18 19 20 41>;
-        };
     };
 
     // combosやmacrosと同じ階層に以下のbihaviorsを追記
