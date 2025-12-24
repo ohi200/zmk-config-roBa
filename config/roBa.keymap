@@ -34,9 +34,9 @@
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
-&trackball {
-    automouse-layer = <3>;
-    scroll-layers = <5>;
+//&trackball {
+//    automouse-layer = <3>;
+//    scroll-layers = <5>;
 
     // arrows {
     //     layers = <3>;
@@ -49,7 +49,7 @@
     //     wait-ms = <5>;
     //     tap-ms = <5>;
     // };
-};
+//};
 
 &trackball_listener {
     input-processors = <&zip_temp_layer 3 10000>;
