@@ -28,7 +28,7 @@
 
 / {
     trackball_listener {
-        status = "okay";
+        //status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
     };
