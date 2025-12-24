@@ -5,9 +5,20 @@
     //require-prior-idle-ms = <200>;
 
     excluded-positions = <
+        5 // Ctrl
+        6 // Ctrl
+        7 // Ctrl
+        8 // Ctrl
+        9 // Ctrl
+        17 // Ctrl
         18 // Ctrl
         19 // Ctrl
         20 // Ctrl
+        21 // Ctrl
+        29 // Ctrl
+        30 // Ctrl
+        31 // Ctrl
+        32 // Ctrl
         41 // Ctrl
     >;
 };
