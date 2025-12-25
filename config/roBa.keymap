@@ -70,11 +70,6 @@
             bindings = <&kp INT_MUHENKAN>;
             key-positions = <13 12>;
         };
-
-        test {
-            bindings = <&kp A>;
-            key-positions = <41>;
-        };
     };
 
     // combosやmacrosと同じ階層に以下のbihaviorsを追記
