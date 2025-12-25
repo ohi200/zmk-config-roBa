@@ -50,7 +50,7 @@
 // };
 //};
 
-&trackball_listener { input-processors = <&zip_temp_layer 3 10000>; };
+&trackball_listener { input-processors = <&zip_temp_layer 3 100000>; };
 
 / {
     combos {
