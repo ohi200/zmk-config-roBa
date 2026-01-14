@@ -54,6 +54,11 @@
 
     input-processors = <&zip_temp_layer 3 100000>; 
 
+    slow_mouse {
+            layers = <2>;
+            input-processors = <&zip_xy_scaler 1 2>;
+        };
+
     scroller {
             layers = <5>;
             input-processors = <&zip_temp_layer 3 10000>; 
