@@ -96,11 +96,13 @@
         henkan {
             bindings = <&kp INT_HENKAN>;
             key-positions = <18 19>;
+            layers = <0 2 3 4>;
         };
 
         muhenkan {
             bindings = <&kp INT_MUHENKAN>;
             key-positions = <13 12>;
+            layers = <0 2 3 4>;
         };
     };
 
