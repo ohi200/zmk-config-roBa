@@ -101,6 +101,14 @@
 
             tap-ms = <20>;
         };
+
+        mt: custom_mt {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred"; // または "balanced", "hold-preferred"
+            tapping-term-ms = <300>;   // <--- 基本200
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     keymap {
