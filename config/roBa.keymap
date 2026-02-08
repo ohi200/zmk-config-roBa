@@ -127,10 +127,10 @@
 
         NUMBER {
             bindings = <
-&kp EXCLAMATION              &kp JP_DQUOTE  &kp HASH           &kp DOLLAR      &kp PERCENT                                   &kp LS(NUMBER_6)  &kp LS(N7)         &kp ASTERISK  &kp LEFT_PARENTHESIS  &mt JP_TILDE MINUS
-&mt LCTRL NUMBER_1           &kp NUMBER_2   &kp NUMBER_3       &lt 2 NUMBER_4  &kp N5             &trans      &kp NUMBER_6   &kp N7            &lt 2 N8           &kp N9        &kp N0                &mt RIGHT_SHIFT MINUS
-&mt LEFT_SHIFT LEFT_BRACKET  &kp JP_PIPE    &kp RIGHT_BRACKET  &kp BACKSLASH   &kp JP_UNDERSCORE  &to 0       &kp LS(MINUS)  &kp COLON         &kp DOUBLE_QUOTES  &kp JP_YEN    &kp SEMICOLON         &kp JP_COLON
-&trans                       &trans         &trans             &trans          &lt 0 SPACE        &trans      &trans         &lt 0 SPACE                                                              &kp DEL
+&kp EXCLAMATION               &kp JP_DQUOTE  &kp HASH           &kp DOLLAR      &kp PERCENT                                   &kp LS(NUMBER_6)  &kp LS(N7)         &kp ASTERISK  &kp LEFT_PARENTHESIS  &mt JP_TILDE MINUS
+&mt2 LCTRL NUMBER_1           &kp NUMBER_2   &kp NUMBER_3       &lt 2 NUMBER_4  &kp N5             &trans      &kp NUMBER_6   &kp N7            &lt 2 N8           &kp N9        &kp N0                &mt2 RCTRL MINUS
+&mt2 LEFT_SHIFT LEFT_BRACKET  &kp JP_PIPE    &kp RIGHT_BRACKET  &kp BACKSLASH   &kp JP_UNDERSCORE  &to 0       &kp LS(MINUS)  &kp COLON         &kp DOUBLE_QUOTES  &kp JP_YEN    &kp SEMICOLON         &kp JP_COLON
+&trans                        &trans         &trans             &trans          &lt 0 SPACE        &trans      &trans         &lt 0 SPACE                                                              &kp DEL
             >;
         };
 
@@ -146,7 +146,7 @@
         MOUSE {
             bindings = <
 &kp ESC         &kp END   &kp UP_ARROW    &kp HOME   &kp F2                             &kp RC(L)    &kp LC(T)    &kp PAGE_DOWN  &kp PAGE_UP  &kp LC(W)
-&kp RCTRL       &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp TAB      &trans      &mkp MB5  &mkp MB4     &mkp MB1     &lt 5 DOWN     &mkp MB2     &mt RIGHT_SHIFT ENTER
+&kp RCTRL       &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp TAB      &trans      &mkp MB5  &mkp MB4     &mkp MB1     &lt 5 DOWN     &mkp MB2     &mt2 RIGHT_SHIFT ENTER
 &kp LEFT_SHIFT  &kp X     &kp C           &kp V      &kt RA(F11)  &to 0       &to 0     &kp HOME     &kp RC(TAB)  &kp UP_ARROW   &kp END      &mkp MB3
 &trans          &trans    &trans          &trans     &lt 1 SPACE  &trans      &trans    &lt 0 SPACE                                           &kp DEL
             >;
