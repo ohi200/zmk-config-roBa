@@ -81,16 +81,6 @@
             key-positions = <20 19>;
         };
 
-        henkan {
-            bindings = <&kp INT_HENKAN>;
-            key-positions = <18 19>;
-        };
-
-        muhenkan {
-            bindings = <&kp INT_MUHENKAN>;
-            key-positions = <13 12>;
-        };
-
         KANA {
             bindings = <&kp LANGUAGE_1>;
             key-positions = <18 19>;
@@ -102,6 +92,18 @@
             key-positions = <13 12>;
             layers = <1>;
         };
+
+        henkan {
+            bindings = <&kp INT_HENKAN>;
+            key-positions = <18 19>;
+        };
+
+        muhenkan {
+            bindings = <&kp INT_MUHENKAN>;
+            key-positions = <13 12>;
+        };
+
+        
     };
 
     macros {
