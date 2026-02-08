@@ -34,10 +34,10 @@
 // #includeのあとのあたりにスクロール量変更の定義を追記
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
-#define MOUSE 3
+#define MOUSE 4
 
 //&trackball {
-//    automouse-layer = <3>;
+//    automouse-layer = <4>;
 //    scroll-layers = <5>;
 // arrows {
 //     layers = <3>;
@@ -53,7 +53,7 @@
 //};
 
 &trackball_listener {
-    input-processors = <&zip_temp_layer 3 10000>;
+    input-processors = <&zip_temp_layer 4 10000>;
 
     slow_mouse {
         layers = <2>;
