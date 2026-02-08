@@ -90,6 +90,18 @@
             bindings = <&kp INT_MUHENKAN>;
             key-positions = <13 12>;
         };
+
+        KANA {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <18 19>;
+            layers = <6>;
+        };
+
+        EISU {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <13 12>;
+            layers = <6>;
+        };
     };
 
     macros {
