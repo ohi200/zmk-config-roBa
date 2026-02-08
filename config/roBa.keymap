@@ -102,7 +102,7 @@
             tap-ms = <20>;
         };
 
-        mt: custom_mt {
+        custom_mt {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred"; // または "balanced", "hold-preferred"
