@@ -82,13 +82,13 @@
         };
 
         KANA {
-            bindings = <&kp LANGUAGE_1>;
+            bindings = <&kp JP_KANA>;
             key-positions = <18 19>;
             layers = <1>;
         };
 
         EISU {
-            bindings = <&kp LANGUAGE_2>;
+            bindings = <&kp JP_EISU>;
             key-positions = <13 12>;
             layers = <1>;
         };
