@@ -34,7 +34,7 @@
 // #includeのあとのあたりにスクロール量変更の定義を追記
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
-#define MOUSE 5
+#define MOUSE 3
 
 //&trackball {
 //    automouse-layer = <3>;
