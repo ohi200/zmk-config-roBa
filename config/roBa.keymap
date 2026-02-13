@@ -161,7 +161,7 @@
                 <&macro_wait_time 500>,
                 <&tog_on 0>;
 
-            label = "BT3";
+            label = "BT2";
         };
 
         bt3: bt3 {
