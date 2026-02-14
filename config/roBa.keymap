@@ -280,7 +280,7 @@
         BT {
             bindings = <
 &trans          &trans        &trans        &trans        &trans                           &bt0    &bt1    &bt2    &bt3    &bt BT_SEL 4
-&trans          &trans        &trans        &trans        &trans  &trans      &to 2        &to 3   &to 4   &trans  &trans  &trans
+&trans          &trans        &trans        &trans        &trans  &trans      &to 2        &to 3   &to 4   &to 7   &trans  &trans
 &trans          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans  &trans  &trans  &trans  &bt BT_CLR
 &bt BT_CLR_ALL  &trans        &trans        &trans        &trans  &trans      &trans       &trans                          &bt BT_CLR
             >;
