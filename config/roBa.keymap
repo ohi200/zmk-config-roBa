@@ -241,10 +241,10 @@
 
         MAC {
             bindings = <
-&kp Q                             &kp W                 &kp E                       &kp R      &kp T                                                   &kp Y        &kp U    &kp I      &kp O    &kp P
-&mt2 LCTRL A                      &kp S                 &kp D                       &lt 3 F    &kp G        &kp LS(CAPSLOCK)      &kp RS(NON_US_BSLH)  &kp H        &lt 3 J  &kp K      &kp L    &mt2 RCTRL RET
-&mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X                 &kp C                       &kp V      &kp B        &none                 &none                &kp N        &kp M    &kp COMMA  &kp DOT  &mt2 RIGHT_SHIFT SLASH
-&mt2 LCTRL JP_TILDE               &mt2 LEFT_ALT JP_YEN  &mt2 RIGHT_COMMAND JP_PIPE  &lt 5 ESC  &lt 7 SPACE  &kp TAB               &kp BACKSPACE        &lt 7 SPACE                               &kp DEL
+&kp Q                             &kp W                          &kp E                  &kp R      &kp T                                                   &kp Y        &kp U    &kp I      &kp O    &kp P
+&mt2 LCTRL A                      &kp S                          &kp D                  &lt 3 F    &kp G        &kp LS(CAPSLOCK)      &kp RS(NON_US_BSLH)  &kp H        &lt 3 J  &kp K      &kp L    &mt2 RCTRL RET
+&mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X                          &kp C                  &kp V      &kp B        &none                 &none                &kp N        &kp M    &kp COMMA  &kp DOT  &mt2 RIGHT_SHIFT SLASH
+&mt2 LCTRL NON_US_BSLH            &mt2 LEFT_ALT LS(NON_US_BSLH)  &mt2 RIGHT_COMMAND AT  &lt 5 ESC  &lt 7 SPACE  &kp TAB               &kp BACKSPACE        &lt 7 SPACE                               &kp DEL
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
